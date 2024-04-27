@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm vị trí</title>
+</head>
+<body>
+<script>
+    let arr = [
+        [11, 12, 13],
+        [22, 23, 24],
+        [33, 34, 35, 10, 15],
+        [43, 44, 45, 14],
+    ];
+   let a = +prompt('nhập vào: ');
+   let b = -1;
+   let c = -1;
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arr[i].length; j++) {
+            if( arr[i][j]=== a){
+                b = i;
+                c = j;
+            }
+
+        }
+    }
+        document.write(" Vị trí của " + a + " trong mảng là: "+ b+" " + " "+c);
+</script>
+</body>
+</html>

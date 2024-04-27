@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tbc</title>
+</head>
+<body>
+<script>
+    let arr = [
+        [11, 12, 13],
+        [22, 23, 24],
+        [33, 34, 35, 13, 15],
+        [43, 44, 45, 12],
+    ];
+    let a = 0;
+    let b = 0;
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arr[i].length; j++) {
+            if(arr[i][j] % 2 !== 0){
+                a += arr[i][j];
+                bai3++;
+            }
+        }
+    }
+    let tbc = a / bai3;
+    document.write(tbc);
+</script>
+</body>
+</html>
