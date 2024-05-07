@@ -5,23 +5,36 @@
     <title>BT</title>
 </head>
 <body>
+<div id ="a"></div>
+<button onclick ="show()">List</button>
+<button onclick = "xemthem()">ADD</button>
 <script>
-    //Bình phương
-    function tinh(a){
-        let b = Math.pow(a,2);
-        return b;
+        let list = ["ip15", "s23", "note9"];
+        show()
+        function show() {
+        let b = `<h1>Danh sách đt</h1>`;
+        b += `<p>số lượng đt: ${list.length}</p>`;
+        for (let i = 0; i < list.length; i++) {
+            b += `<h3>${list[i]}<button onclick="edit(${i})">edit</button></h3>`;
+        }
+        document.getElementById("a").innerHTML = b;
     }
-    let soCanTinh = prompt("Nhập số bạn muốn tính bình phương:");
-    let ketQua = tinh (soCanTinh);
-    alert(ketQua);
-    // CV< DT
-    function tich(r){
-        let cv = 2 * r * 3.14;
-        let dt = Math.pow(r,2) * 3.14;
+    function xemthem() {
+        let b = `<input id="nhap"> <button onclick="add()">Creat</button>`;
+        document.getElementById('a').innerHTML = b;
     }
-    let solieu = +prompt("nhập: ");
-    let ketqua = tich(solieu);
-    alert(ketqua);
+    function add(){
+            list.push(document.getElementById("nhap").value);
+            show();
+    }
+    function edit(index){
+        let b = `<input id="nhap" value="${list[index]}"> <button onclick="save(${index})">Save</button>`;
+        document.getElementById('a').innerHTML = b;
+    }
+    function save(index){
+            list[index] = document.getElementById('nhap').value;
+            show();
+    }
 </script>
 </body>
 </html>
