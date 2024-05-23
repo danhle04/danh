@@ -1,0 +1,66 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-image: url('https://cdn.tgdd.vn//GameApp/-1//toan-bo-dap-an-game-bat-chu-duoi-hinh-bat-chu111-800x545-800x545.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+h1 {
+    color: darkblue;
+}
+
+img {
+    width: 500px;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+input {
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: blueviolet;
+    color: white;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: chartreuse;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color:chartreuse;
+    transform: scale(0.95);
+}
+
+#message {
+    font-size: 20px;
+    margin-top: 20px;
+}
+#timer {
+    font-size: 24px;
+    margin-bottom: 20px;
+}

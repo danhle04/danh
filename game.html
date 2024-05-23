@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đuổi Hình Bắt Chữ</title>
+    <link rel="stylesheet" href="ktra.css">
+</head>
+<body>
+<div id="game" class="container">
+    <h1>Đuổi Hình Bắt Chữ</h1>
+    <img id="image" src="" alt="Game Image">
+    <div class="input-container">
+        <input type="text" id="guess" placeholder="Nhập câu trả lời của bạn">
+        <button onclick="check()">Đoán</button>
+    </div>
+    <div class="message" id="message"></div>
+    <button class="next-button" id="next">Chuyển câu tiếp theo</button>
+</div>
+<audio id="game-sound" controls loop style="display: none;">
+    <source src="amthanh.ogg" type="audio/ogg">
+</audio>
+<script src="kiemtra.js"></script>
+</body>
+</html>

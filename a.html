@@ -2,38 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>BT</title>
+    <title>Home</title>
 </head>
 <body>
-<div id ="a"></div>
-<button onclick ="show()">List</button>
-<button onclick = "xemthem()">ADD</button>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-image: url(https://cdn.tgdd.vn//GameApp/-1//toan-bo-dap-an-game-bat-chu-duoi-hinh-bat-chu111-800x545-800x545.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+
+    }
+    .start-button {
+        padding: 20px 40px;
+        font-size: 24px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+</style>
+<button class="start-button" onclick="start()">Bắt đầu</button>
 <script>
-        let list = ["ip15", "s23", "note9"];
-        show()
-        function show() {
-        let b = `<h1>Danh sách đt</h1>`;
-        b += `<p>số lượng đt: ${list.length}</p>`;
-        for (let i = 0; i < list.length; i++) {
-            b += `<h3>${list[i]}<button onclick="edit(${i})">edit</button></h3>`;
-        }
-        document.getElementById("a").innerHTML = b;
-    }
-    function xemthem() {
-        let b = `<input id="nhap"> <button onclick="add()">Creat</button>`;
-        document.getElementById('a').innerHTML = b;
-    }
-    function add(){
-            list.push(document.getElementById("nhap").value);
-            show();
-    }
-    function edit(index){
-        let b = `<input id="nhap" value="${list[index]}"> <button onclick="save(${index})">Save</button>`;
-        document.getElementById('a').innerHTML = b;
-    }
-    function save(index){
-            list[index] = document.getElementById('nhap').value;
-            show();
+    function start() {
+        window.location.href = 'game.html';
     }
 </script>
 </body>
