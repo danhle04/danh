@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .header {
+            width: 100%;
+            height: 150px;
+            border: 1px solid;
+            margin-bottom: 5px;
+            display: flex;
+        }
+        .a {
+            width: 25%;
+            height: 150px;
+            border: 1px solid;
+            margin-right: 5px;
+        }
+        .b {
+            width: 75%;
+            height: 150px;
+            border: 1px solid;
+        }
+        .menu {
+            width: 100%;
+            height: 25px;
+            border: 1px solid;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+            padding: 5px;
+        }
+        .menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        .menu li {
+            margin-right: 10px;
+            border-right: 2px solid black;
+            padding-right: 10px;
+        }
+        .menu li:last-child {
+            border-right: none;
+        }
+        .menu input {
+            padding: 2px;
+            margin-left: auto;
+            border-radius: 15px;
+        }
+        .main {
+            width: 100%;
+            height: 300px;
+            border: 1px solid;
+            margin-bottom: 55px;
+            display: flex;
+        }
+        .c {
+            width: 12%;
+            height: 300px;
+            border: 1px solid;
+            margin-right: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+       .tren{
+           width:100%;
+           height: 60%;
+           margin-bottom:5%;
+           border: 1px solid;
+        }.duoi{
+           width:100%;
+           height: 35%;
+           border: 1px solid;
+        }
+        .d {
+            width: 68%;
+            height: 300px;
+            border: 1px solid;
+            margin-right: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .top {
+            display: flex;
+            justify-content: space-between;
+            height: 31%;
+            border: 1px solid;
+            margin-bottom: 1%;
+        }
+        .left {
+            height: 100%;
+            width: 40%;
+            border: 1px solid;
+            margin-right: 5px;
+            display: flex;
+        }
+        .right {
+            height: 100%;
+            width: 60%;
+            border: 1px solid;
+            display: flex;
+        }
+        .mid, .bot {
+            height: 30%;
+            border: 1px solid;
+            margin-bottom: 1%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .n1, .n2, .n5, .n4{
+            height: 100%;
+            width:30%;
+            border: 1px solid;
+            margin-right:1% ;
+        }
+        .n3, .n6{
+            height: 100%;
+            width:30%;
+            border: 1px solid;
+        }
+
+        .e {
+            width: 20%;
+            height: 350px;
+            border: 1px solid;
+        }
+        .lich, .chart, .map{
+            width:100%;
+            height:30%;
+            margin-bottom: 1%;
+        }
+        .footer {
+            width: 100%;
+            height: 50px;
+            border: 1px solid;
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            justify-content: space-between;
+        }
+        .footer ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        .footer li {
+            margin-right: 10px;
+        }
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="a">
+        <p>Logo</p>
+    </div>
+    <div class="b">
+    <p>Banner</p>
+    </div>
+</div>
+<div class="menu">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Students</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+    <input type="text" placeholder="search" />
+</div>
+<div class="main">
+    <div class="c">
+        <div class="tren">
+            <p>Introduction</p>
+            <p>News</p>
+            <p>Education</p>
+            <p>Register</p>
+            <p>Courses</p>
+        </div>
+        <div class="duoi"></div>
+    </div>
+    <div class="d">
+        <div class="top">
+            <div class="left">
+                <p>Hot news</p>
+            </div>
+            <div class="right">
+                <p>Photo Slide</p>
+            </div>
+        </div>
+        <div class="mid">
+            <div class="n1"><p>News 1</p></div>
+            <div class="n2"><p>News 2</p></div>
+            <div class="n3"><p>News 3</p></div>
+        </div>
+        <div class="bot">
+            <div class="n4"><p>News 4</p></div>
+            <div class="n5"><p>News 5</p></div>
+            <div class="n6"><p>News 6</p></div>
+        </div>
+    </div>
+    <div class="e">
+        <img class="lich" src="https://png.pngtree.com/element_our/20190529/ourlarge/pngtree-mandible-calendar-hand-drawn-illustration-image_1209011.jpg">
+        <img class="chart" src="https://png.pngtree.com/png-clipart/20190920/original/pngtree-ppt-element-illustration-decoration-report-png-image_4614769.jpg">
+        <img class="map" src="https://www.techtimes.vn/wp-content/uploads/2023/05/google-maps-icon-on-map.jpg">
+
+    </div>
+</div>
+<div class="footer">@2012 - TapChiLapTrinh
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Students</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+</div>
+</body>
+</html>
