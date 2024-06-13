@@ -16,6 +16,7 @@
             height: 150px;
             border: 1px solid;
             margin-right: 5px;
+
         }
         .b {
             width: 75%;
@@ -128,6 +129,7 @@
             width: 20%;
             height: 350px;
             border: 1px solid;
+            flex-wrap: wrap;
         }
         .lich, .chart, .map{
             width:100%;
@@ -155,6 +157,12 @@
         p {
             text-align: center;
         }
+        @media only screen and (max-width: 1200px){
+            .header .a, .c{
+                display: none;
+            }
+        }
+
     </style>
 </head>
 <body>
