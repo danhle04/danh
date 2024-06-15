@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .Logo{
+            margin: 10px 30px;
+            border: 1px solid grey;
+        }
+         .Navi, .header, .footer {
+            margin: 10px 30px;
+            border: 1px solid grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .Logo {
+            height: 40px;
+        }
+
+        .Navi {
+            height: 20px;
+        }
+
+        .header {
+            height: 80px;
+        }
+
+        .body {
+            margin: 10px 30px;
+            height: 400px;
+            display: flex;
+        }
+
+        .body .left, .body .right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border: 1px solid grey;
+        }
+
+        .body .left {
+            margin-right: 20px;
+            height: 100%;
+            width: 200px;
+        }
+
+        .body .right {
+            height: 100%;
+            flex-grow: 1;
+        }
+
+        .footer {
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+<div class="Logo">
+    Logo
+</div>
+<div class="Navi">
+    Navigation
+</div>
+<div class="header">
+    Header/Banner
+</div>
+<div class="body">
+    <div class="left">Side Bar</div>
+    <div class="right">Body Area</div>
+</div>
+<div class="footer">Footer</div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .logo{
+        margin: 10px 30px;
+        border: 1px solid grey;
+    }
+    .intro, .header, .footer {
+        margin: 10px 30px;
+        border: 1px solid grey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo {
+        height: 40px;
+    }
+    .header {
+        height: 80px;
+    }
+    .intro{
+        height:70px;
+    }
+    .box {
+        margin: 10px 30px;
+        height: 400px;
+        display: flex;
+    }
+    .box1, .box2, .box3 {
+        flex: 1;
+        height: 100%;
+        border: 1px solid grey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .box1, .box2 {
+        margin-right: 10px;
+    }
+    .footer {
+        height: 40px;
+    }
+    .p{
+        justify-content: center;
+        align-items: center;
+        text-align: right;
+    }
+</style>
+<body>
+<div class="logo">
+    Logo
+    <div class="p">Navigation</div>
+</div>
+<div class="header">
+    Header/Banner
+</div>
+<div class="intro">
+Intro TextArea
+</div>
+<div class="box">
+    <div class="box1">
+        Box 1
+    </div>
+    <div class="box2">Box 2</div>
+    <div class="box3">Box 3</div>
+</div>
+<div class="footer">Footer</div>
+</body>
+</html>
